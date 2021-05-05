@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="style.css">
+  <head><title>My Sample Survey</title></head>
+  <header>
+    <h1 id="title">Sample Survey For Fun</h1>
+    <p id="description"><em>This is my first sample survey.</em></p>
+  </header>
+  <body>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name" id="name-label">Name</label>
+      <br>
+        <input id="name" type="text" placeholder="Enter name" required>
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <br>
+        <input type="email" id="email" name="email" placeholder="Email address" required>
+      <br>
+        <label for="age" id="number-label">Age <em>(optional)</em></label>
+       <br>
+        <input name="age" id="number" type="number" min="1" max="100" placeholder="Age">
+       <br>
+        <label for="dropdown">Overall Survey Quality</label>
+        <br>
+          <input id="drop" type="text" list="dropdown" placeholder="select one">
+          <datalist id="dropdown">
+            <option value="Poor"/>
+            <option value="Well"/>
+            <option value="Good"/>
+            <option value="Great"/>
+          </datalist>
+<!--radio buttons-->
+      <br>
+        <h4>Needs Improvement:</h4>
+
+        <input type="radio" name="needs-focus" id="layout" value="layout">
+        <label for="layout">Layout</label>
+      <br>
+
+        <input id="quality" name="needs-focus" type="radio" value="quality">
+        <label for="quality">Quality</label>
+      <br>
+
+        <input id="technicality" type="radio" name="needs-focus" value="technicality">
+        <label for="technicality">Technicality</label>
+      <br>
+
+        <input id="cleanliness" name="needs-focus" type="radio" value="cleanliness">
+        <label for="cleanliness">Cleanliness</label>
+
+      <br>
+<!-- checkboxes-->
+        <h4>Where should I direct Attention to?</h4>
+      <input id="checkboxes" type="checkbox" name="Html layout" value="Html layout">
+      <label for="checkboxes">Html layout</label>
+        <br>
+        <input id="checkboxes" type="checkbox" name="css layout" value="css layout">
+     <label for="checkboxes">CSS layout</label>
+        <br>
+       <input id="checkboxes" type="checkbox" name="legibility" value="legibility">
+     <label for="checkboxes">Legibility</label>
+        <br>
+       <input id="checkboxes" type="checkbox" name="visuals" value="visuals">
+     <label for="checkboxes">Visuals</label>
+        <br>
+        <input id="checkboxes" type="checkbox" name="Format" value="format">
+     <label for="checkboxes">Format</label>
+       <br>
+       <input id="checkboxes" type="checkbox" name="features" value="features">
+     <label for="checkboxes">Features</label>
+       <br>
+<!--textarea below-->
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea cols="50vw" rows="9" id="comments" placeholder="Comments"></textarea>
+        <br>
+        <input type="Submit" id="submit" value="Submit">
+     </fieldset>
+    </form>
+  </body>
+  <footer></footer
+</html>
